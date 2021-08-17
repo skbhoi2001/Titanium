@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <style>
+    body{
+      font-family: "SF Pro Text","Helvetica Neue",Helvetica,Lato,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #3a3a3a;
+    }
+    .container{
+      width: 90%;
+      margin: auto;
+      
+    }
+
+  /* navbar  start  */
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+      
+}
+ul>li{
+  padding: 5px;
+}
+#nav{
+  display: flex;
+}
+#nav-left{
+  flex-grow: 1;
+}
+#nav>ul{
+  display: flex;
+  font-size: 12px;
+}
+ul>li:nth-child(1)>img{
+  width: 60px;
+  padding-top: 13px;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px #888888;
+}
+
+.dropdown-content a {
+  color: black; 
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+#nav-right>li>button{
+  margin-top: 8px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 12px;
+
+}
+#nav-right>li>button:hover,a:hover{
+  color: #02bdad;
+}
+#nav-right>li>button:hover{
+  border: 1px solid #02bdad;
+  background-color: white;
+}
+/* navbar end */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="nav">
+      <ul id="nav-left">
+        <li><img src="https://niftypm.com/_nuxt/img/nifty-logo.c577d9d.svg"/></li>
+        <li class="dropdown">
+          <a class="dropbtn">Features</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a class="dropbtn">Use Cases</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a class="dropbtn">Resources</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+        <li><a href="#home">Got Clients?</a></li>
+        <li><a href="#news">Pricing</a></li>
+      </ul>
+      <ul id="nav-right">
+        <li><button>Get a Demo</button></li>
+        <li><a href="#news">Log in <span>&#8594;</span> </a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
