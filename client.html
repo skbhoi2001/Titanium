@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Got clients?</title>
+    <style>
+        #full_page{
+            width: 90%;
+            margin:auto;
+            /* text-align: center; */
+        }
+        .head>p{
+            text-align: center; 
+        }
+       
+        .head>p:nth-child(1){
+            border: 1px solid orangered;
+            width: 25%;
+            border-radius:15px;
+            background-color: orangered;
+            color: white;
+            font-size: 12px;
+            margin-left: 40%;
+            font-weight: 900;
+            padding: 2px;
+        }
+        .head>p:nth-child(2){
+            font-size: 30px;
+            font-weight: bolder;
+            word-spacing: 10px;
+        }
+        .head>p:nth-child(3){
+           
+            width: 600px;
+            font-size: 20px;
+            margin-left: 22%;
+            word-spacing: 5px;
+            line-height: 30px;
+        }
+        .details{
+            display: flex;
+            margin-top:5%;
+            width: 100%;
+            margin-left: 25%;
+        }
+        #name{
+            border:1px solid turquoise;
+            height: 70%;
+            width: 100%; 
+            box-shadow: 1px 1px grey;
+            padding: 10px;
+            display: block;
+        }
+        .box{
+             margin-left: 5%;
+             width: 15%;
+             background-color: turquoise;
+             border-radius: 5px;
+             padding:auto;
+             color: white;
+             font-weight: bolder;
+        }
+        .box~p{
+            font-size: large;
+            margin-left: 2%;
+        }
+        .google_img>img{
+            height: 50px;
+            width: 70px;
+        }
+        .cards{
+            margin-left: 25% ;
+            color: grey;
+            word-spacing: 5px;
+            margin-top: 6px;
+        }
+        .options{
+            margin:80px 250px;
+        }
+        a:nth-child(n){
+            color: grey;
+            margin: 20px 10px;
+            font-size: 10px;
+            font-weight: bolder;
+        }
+        a:hover{
+            color: indianred;
+        }
+        .free_trial{
+            display: flex;
+            margin-left: 20%;
+        }
+        .report{
+            width: 40%;
+            margin-right: 50px;
+        }
+        .report>p:nth-child(1){
+          font-size: 20px;
+          color: orangered;
+          font-weight: bolder;
+        }
+        .report>p:nth-child(2){
+            font-weight: bolder;
+            font-size: large;
+        }
+        .report>p:nth-child(3){
+            word-spacing: 8px;
+        }
+    </style>
+</head>
+<body>
+ <div id="full_page">
+ <div class="head">
+     <p>CLIENT PROJECT MANAGEMENT</p>
+     <p>Nifty automates reporting for your clients.</p>
+     <p>Never lose a client due to poor communication again.Manage client projects,deliveries,and communications in one place.</p>
+ </div>
+ <div class="details">
+  <form>
+      <label for="name"></label>
+      <input type="text" id="name" placeholder="name@company.com">
+    </form>
+    <div class="box">
+        <p>Try Nifty For Free</p>
+    </div>
+    <p>OR</p>
+    <div class="google_img">
+        <img src="https://cdn.pixabay.com/photo/2016/10/23/06/04/google-1762248__340.png">
+    </div>
+    </div>
+    <div class="cards">
+        No credit card required.Available on Mac,Windows,iOS,& Android.
+    </div>
+    <div id="second_part">
+      <div class="options">
+          <a href="a">STREAMLINED COMMUNICATION</a>
+          <a href="b">AUTOMATED REPORTING</a>
+          <a href="c">CENTRALIZED DELIVERABLES</a>
+      </div>
+
+      <div class="free_trial">
+          <div class="report">
+              <p>01.</p>
+              <p>Streamlined
+              Communication</p>
+              <p>A space for your team and clients to share ideas, gather feedback, finalize specs, and turn discussions into actions.</p>
+              <p>Start Free Trial</p>
+          </div>
+          <img src="https://niftypm.com/_nuxt/img/large@1x.1450581.webp">
+      </div>
+    </div>
+    
+ </div>   
+</body>
+</html>
