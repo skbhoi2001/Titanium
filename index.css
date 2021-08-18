@@ -12,7 +12,12 @@ color: #3a3a3a;
 
 /* navbar  start  */
 #nav{
-  margin-bottom: 70px;
+  width: 90%;
+ margin-bottom: 70px;
+ position:fixed ;
+ background-color: rgb(245, 242, 242);
+ border-radius: 10px;
+ padding:10px;
 }
 ul {
 list-style-type: none;
@@ -89,6 +94,7 @@ background-color: white;
 
 /* CONTENT1 START */
 #box-awarded{
+  padding-top: 90px;
   display: grid; 
   gap: 20px;
   grid-template-areas: 'baleft baright';
@@ -266,3 +272,153 @@ h5+button>img{
 #btn-text>p{
   flex-grow: 1;
 }
+
+/* CONTENT3 START */
+  #content3{
+    margin-top: 70px;
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 'cntleft cntright cntright';
+  }
+  #content3-left{
+    grid-area: cntleft;
+  }
+  #content3-right{
+    grid-area: cntright;
+  }
+  #content3-left>p:nth-child(1){
+    display: block;
+    margin-bottom: 10px;
+    font-size: 62px;
+    font-weight: 600;
+    line-height: 1;
+    color: #df67ff;
+    opacity: .6;
+  }
+  #content3-left>p:nth-child(2){
+    font-size: 30px;
+    font-weight: 600;
+  }
+  #content3-left>p:nth-child(3){
+    font-size: 20px;
+    color: #888888;
+  }
+  #content3-left>p:nth-child(4){
+    color: #df9100;
+  }
+  #content3-left>p:nth-child(4)>a:hover{
+    color: #df9100;
+    text-decoration: underline;
+  }
+/* CONTENT3 END */
+
+/* Nifty Start */
+  #nifty{
+    margin-top: 100px;
+    text-align: center;
+  }
+  #nifty>p>img{
+    width: 30px;
+    background-color: #f6b800;
+    padding: 15px;
+    border-radius: 60%;
+    
+  }
+  #nifty>p:nth-child(2){
+    font-size: 30px;
+    font-weight: 700;
+    margin:0  0 50px 0;
+  }
+
+  #nifty-text{
+    display: grid;
+    gap: 20px;
+    grid-template-areas:'text1 text2 text3' ;
+    
+  }
+  #nifty-text,h5{
+    text-align: left;
+  }
+  #nifty-text2>h5{
+    margin-top: 120px;
+  }
+  #nifty-text3>h5{
+    margin-top: 100px;
+  }
+  #nifty-text1{
+    grid-area: text1;
+    background-color: rgb(221, 219, 214);
+    padding:20px;
+    border-radius: 10%;
+  }
+  #nifty-text2{
+    grid-area: text2;
+    background-color: rgb(202, 201, 199);
+    padding:20px;
+    border-radius: 10%;
+  }
+  #nifty-text3{
+    grid-area: text3;
+    background-color: rgb(202, 201, 199);
+    padding:20px;
+    border-radius: 10%;
+  }
+  /* Nifty End */
+
+  /* review start */
+  #nifty-rev>p{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: coral;
+  }
+  #nifty-rev>p>a:hover{
+    color: coral;
+    text-decoration: underline;
+  }
+  #review{
+    display: grid;
+    width: 60%;
+    margin: auto;
+    grid-template-areas: 'img1 img2 img3 img4 img5 img6';
+  }
+  #review>img{
+    width: 120px;
+  }
+  #review>img:nth-child(1){
+    grid-area: img1;
+  }
+  #review>img:nth-child(2){
+    grid-area: img2;
+  }
+  #review>img:nth-child(3){
+    grid-area: img3;
+  }
+  #review>img:nth-child(4){
+    grid-area: img4;
+  }
+  #review>img:nth-child(5){
+    grid-area: img5;
+  }
+  #review>img:nth-child(6){
+    grid-area: img6;
+  }
+  /* review end */
+
+  /* switch  start*/
+  #switch{
+    width: 50%;
+    margin: auto ;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 'sleft sright';
+    padding-top: 100px;
+  }
+  #switch-left{
+    grid-area: sleft;
+  }
+  #switch-right{
+    grid-area: sright;
+  }
+  /* switch  end*/
