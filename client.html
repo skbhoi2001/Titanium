@@ -41,34 +41,43 @@
         }
         .details{
             display: flex;
-            margin-top:5%;
-            width: 100%;
-            margin-left: 25%;
+            margin: auto;
+            width: 50%;
+            
         }
-        #name{
+
+        .details>input{
             border:1px solid turquoise;
-            height: 70%;
-            width: 100%; 
-            box-shadow: 1px 1px grey;
+            padding: 20px; 
+            flex-grow: 2; 
+            margin: 10px;  
+            border-radius: 10px;
+        }
+        
+        .details>#btn1{
+            flex-grow: 1;
+            margin: 10px;
+            border-radius: 10px;
+            border:0;
+            background-color: #00a99b;
+            color: beige;
+            font-weight: 600;
+        }
+        .details>p{
+            flex-grow: 0.5;
+        }
+        .details>#btn{
+            padding: 2px;
+            border: 0;
+            background-color: white;
+        }
+        .details>p{
             padding: 10px;
-            display: block;
         }
-        .box{
-             margin-left: 5%;
-             width: 15%;
-             background-color: turquoise;
-             border-radius: 5px;
-             padding:auto;
-             color: white;
-             font-weight: bolder;
-        }
-        .box~p{
-            font-size: large;
-            margin-left: 2%;
-        }
-        .google_img>img{
-            height: 50px;
+        .details>#btn>img{
+            flex-grow: 0.5;
             width: 70px;
+            margin-left: -20px;
         }
         .cards{
             margin-left: 25% ;
@@ -166,17 +175,12 @@
      <p>Never lose a client due to poor communication again.Manage client projects,deliveries,and communications in one place.</p>
  </div>
  <div class="details">
-  <form>
-      <label for="name"></label>
-      <input type="text" id="name" placeholder="name@company.com">
-    </form>
-    <div class="box">
-        <p>Try Nifty For Free</p>
-    </div>
+    <input type="text" id="name" placeholder="name@company.com">
+   
+    <button id="btn1">Try Nifty For Free</button>
+
     <p>OR</p>
-    <div class="google_img">
-        <img src="https://cdn.pixabay.com/photo/2016/10/23/06/04/google-1762248__340.png">
-    </div>
+   <button id="btn"> <img src="https://cdn.pixabay.com/photo/2016/10/23/06/04/google-1762248__340.png"></button>
     </div>
     <div class="cards">
         No credit card required.Available on Mac,Windows,iOS,& Android.
