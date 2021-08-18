@@ -5,96 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Page</title>
-  <style>
-    body{
-      font-family: "SF Pro Text","Helvetica Neue",Helvetica,Lato,Arial,sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #3a3a3a;
-    }
-    .container{
-      width: 90%;
-      margin: auto;
-      
-    }
-
-  /* navbar  start  */
-    ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-      
-}
-ul>li{
-  padding: 5px;
-}
-#nav{
-  display: flex;
-}
-#nav-left{
-  flex-grow: 1;
-}
-#nav>ul{
-  display: flex;
-  font-size: 12px;
-}
-ul>li:nth-child(1)>img{
-  width: 60px;
-  padding-top: 13px;
-}
-li a, .dropbtn {
-  display: inline-block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 2px 2px #888888;
-}
-
-.dropdown-content a {
-  color: black; 
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-#nav-right>li>button{
-  margin-top: 8px;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 10px;
-  background-color: white;
-  font-size: 12px;
-
-}
-#nav-right>li>button:hover,a:hover{
-  color: #02bdad;
-}
-#nav-right>li>button:hover{
-  border: 1px solid #02bdad;
-  background-color: white;
-}
-/* navbar end */
-  </style>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
 </head>
 <body>
   <div class="container">
+
+    <!-- NAVBAR START -->
+
     <div id="nav">
       <ul id="nav-left">
         <li><img src="https://niftypm.com/_nuxt/img/nifty-logo.c577d9d.svg"/></li>
@@ -130,6 +48,107 @@ li.dropdown {
         <li><a href="#news">Log in <span>&#8594;</span> </a></li>
       </ul>
     </div>
+
+    <!-- NAVBAR ENDS -->
+
+    <!-- CONTENT1 START -->
+    <div id="box-awarded">
+      <div id="box-awarded-left">
+        <p><button>AWARDED</button> #1 Project Management App by G2</p>
+        <h1>Streamline, centralize, and modernize project management.</h1>
+        <p>Stop switching between Chats, Tasks, Docs, Calendar, & Meeting tools — bring your team & clients together in one simple, yet powerful app.</p>
+        <div id="box-awarded-left-input">
+          <input type="text" placeholder="name@company.com"/>
+          <button>Try Nifty for Free</button>
+        </div>
+        <h5>OR</h5>
+        <button id="signup"> <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>Sign Up with Google</button>
+        <p id="text">No credit card required. Available on   <a>Mac</a>, <a>Windows</a>, <a>iOS</a> &  <a>Android</a></p>
+      </div>
+      <div id="box-awarded-right">
+        <img src="https://niftypm.com/_nuxt/img/large@1x.237a1ce.webp"/>
+      </div>
+    </div>
+    <div id="clear"></div>
+    <!-- CONTENT1 END -->
+    <!-- SPONSORSHIP START -->
+
+    <div id="sponsor">
+      <p>TRUSTED BY THOUSANDS OF REMOTE TEAMS </p>
+      <div id="sponsor-img">
+        <img id="apple" src="https://niftypm.com/_nuxt/img/logo-apple.90494dc.svg"/>
+        <img id="verizon" src="https://niftypm.com/_nuxt/img/logo-verizon.9e31975.svg"/>
+        <img id="data" src="https://niftypm.com/_nuxt/img/logo-pd.2e75b01.svg"/>
+        <img id="emovis" src="https://niftypm.com/_nuxt/img/logo-emovis.1bc45e8.svg"/>
+        <img id="vm" src="https://niftypm.com/_nuxt/img/logo-vmware.61e07e9.svg"/>
+        <img id="ibm" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTAwMCIgaGVpZ2h0PSI0MDAiPgogIDxjbGlwUGF0aCBpZD0iYiI+CiAgICA8cGF0aCBkPSJNMC0xdjgzaDU1LjkzN3YyMzZIMS41MjN2ODJoMTk0LjY1di04MmgtNTUuOTM4VjgyaDU0LjQxNFYtMXptNTU0LjAyIDF2ODJoNTUuOTM4djIzNmgtNTQuNDE0djgyaDEzOC43MVYxNzEuODRsODIuNjU2IDIyOC4wOCAxLjY4LjA0IDgxLjE3Mi0yMjguMTJWNDAwaDE0MC4yM3YtODJoLTU1LjkzOFY4Mmg1NC40MTVWMGgtMTU2LjMzbC02NC43MjYgMTgyLjg5TDcxMS44NjYgMHoiLz4KICAgIDxwYXRoIGlkPSJhIiBkPSJNMjIyLjIzIDB2ODJoNTUuOTM3djEzMGgyMTUuMzF2LTI0LjkyOHMxOC4wMTEtMTQuMDQyIDIzLjc1LTI3LjM2N2wxMS41MjMtMjUuODU1czUuMzUyLTE0LjQ3MiA1LjM1Mi0yNy40MDVsLTIuMzA1LTI1Ljg1NXMtMy42MTYtMjEuMDYzLTkuOTIyLTI3LjMyOGwtMjIuMjY2LTI1Ljg5NVM0NzEuMjc2IDAgNDMzLjc1IDB6bTE0MC4yMyA4Mmg4MS45OTJ2NzZIMzYyLjQ2eiIvPgogICAgPHVzZSB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAwIDQwMCkiIHhsaW5rOmhyZWY9IiNhIi8+CiAgPC9jbGlwUGF0aD4KICA8cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiMzYTNhM2EiIHN0cm9rZS13aWR0aD0iMjcuMzciIGQ9Ik0wIDEzLjY4M2gxMDMwdjUzLjIzMkgwbTAgNTMuMjMyaDk3NXY1My4yNDJIMHY1My4yMjJoOTc1djUzLjIyMkgwbTAgNTMuMjQyaDEwMzB2NTMuMjQySDAiIGNsaXAtcGF0aD0idXJsKCNiKSIvPgo8L3N2Zz4K"/>
+        <img id="loreal" src="https://niftypm.com/_nuxt/img/logo-loreal.f0acb48.svg"/>
+        <img id="nyu" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4OC4yIDMwLjEiPgogIDxwYXRoIGZpbGw9IiMzYTNhM2EiIGQ9Ik0zNy45IDYuN2gzLjVsOCAxMC41VjYuN2gzLjd2MTdoLTMuMmwtOC4zLTEwLjh2MTAuOGgtMy43di0xN3pNNjEuNSAxN0w1NC45IDYuN2g0LjRsNC4xIDYuOCA0LjEtNi44aDQuM2wtNi41IDEwLjJ2Ni44aC0zLjdWMTd6bTExLjktLjZWNi43aDMuN3Y5LjZjMCAyLjggMS40IDQuMiAzLjcgNC4yIDIuMyAwIDMuNy0xLjQgMy43LTQuMVY2LjdoMy43djkuNmMwIDUuMi0yLjkgNy43LTcuNSA3LjdzLTcuMy0yLjYtNy4zLTcuNm0tNjAtLjdjLTMuMS0xLjgtMi44LTQuNS0xLjUtNi40di0uMmMtLjEtLjUtLjYtMS42LS44LTEuOS0uMS0uMS0uMS0uMS0uMSAwIDAgLjUtLjYgMS44LTEuNSAzLjMtMSAxLjctMSA1LjIgMy45IDUuMiAwIC4xIDAgMCAwIDBtLjgtLjFjLTEuOC0zLjkgMS44LTYuNSAyLjQtNyAuMS0uMS4xLS4xLjEtLjIgMC0xLjItLjctMy4yLS45LTMuNWgtLjFjLS4zIDEuMi0yIDMtMi4zIDMuNC0yLjkgMy4zLTIuMiA1LjQuOCA3LjMgMCAuMSAwIDAgMCAwbS42LS4yYy45LTQuMiA0LjMtNC4zIDQuNi01LjEuNS0xLjItLjQtMy40LS42LTMuN2gtLjFjLS41IDEtMS4yIDItMS44IDIuNC0uNy43LTMuNyAyLjktMi4xIDYuNC0uMS4xIDAgLjEgMCAwbS42LjRjNS41LjIgNS45LTQuOCA1LjktNi43IDAtLjEtLjEtLjEtLjEgMC0uMi40LS45IDEuOC0yLjkgMi42LTEuNy44LTIuOCAyLjUtMi45IDQuMS0uMSAwIDAgMCAwIDBtMS4yLjZoLTQuM3YxLjNoNC4zdi0xLjN6bS0yLjUgMTAuMmMwIC4yLjUuMy42IDBsMS04LjNoLTIuNWwuOSA4LjN6bTE2IDMuNUguMVYuMWgzMHYzMHoiLz4KPC9zdmc+Cg=="/>
+      </div>
+    </div>
+    <div id="clear"></div>
+
+    <!-- SPONSORSHIP END -->
+
+    <div id="content2">
+      <button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAgCAMAAABw3UvaAAAAZlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+Vn2moAAAAIXRSTlMA8xrZA2u27buaTA7plY8VwYiARjno29OtqXZwX04/IgmxeutuAAAA1UlEQVQ4y52VRw6DQAxF/1QYaijpde5/yQgUAQpjL/yXtp5suWKVHbv8nMW0qvoxtkip7I+RVD5YpGXvFY2dnqBU+kjr8iG5t2G4DpO080Yp453exuO4esbCaggLanOGO1gAhdqaVPEDbwynWgDu3+owqc0YsJ/i7c1zzIbhqhLQKpGIBiwXsAEQUo4ADJHRC9Bpj0bNcJldKrOvD9sLAMRMeXDNvwKU30DxtaH8SgyKUxUXR9wO8QBIR0485NK1ki6y9HSIj5X8PMoPsvwFyJ+O+M19AQdyqk1wf/FTAAAAAElFTkSuQmCC" /></button>
+      <h1>Say goodbye to status meetings!</h1>
+      <p>Create a clear plan of action for your projects and automate your progress tracking.</p>
+      <div id="animation">
+        <button>1</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>2</button>
+        <button>.</button> 
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>3</button>
+        <button>.</button>        
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>4</button>
+        <button>.</button>        
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>.</button>
+        <button>5</button>
+      </div>
+      <diV id="btn-text">
+        <p>SET GOALS & TIMELINES</p>
+        <p>COLLABORATE ON TASK</p>
+        <p>ESTABLISH KNOWLEDGE HUB</p>
+        <p>CREATE DOCS & NOTES</p>
+        <p>BALANCE WORKLOAD</p>
+      </diV>
+    </div>
+
   </div>
 </body>
 </html>
