@@ -1,7 +1,11 @@
-
+  .container{
+    width: 90%;
+    margin: auto;
+  }
         #full_page{
             width: 90%;
             margin:auto;
+            padding-top: 150px;
             /* text-align: center; */
         }
         #pro-manag{
