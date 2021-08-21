@@ -184,11 +184,15 @@ h5+button>img{
   font-size: 22px;
   font-weight: 300;
 }
+button>a{
+  text-decoration: none;
+  font-size: 20px;
+}
 #animation>button:nth-child(1),#animation>button:nth-child(11n){
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: burlywood;
+  background-color: #D5E0DE;
 }
 #btn-text{
   display: flex;
@@ -238,6 +242,18 @@ h5+button>img{
   #content3-left>p:nth-child(4)>a:hover{
     color: #df9100;
     text-decoration: underline;
+  }
+  #content3-left>button{
+    background-color: rgb(32, 157, 148);
+    color: white;
+    border: 0;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  #content3-left>button:hover{
+    background-color: turquoise;
   }
 /* CONTENT3 END */
 
