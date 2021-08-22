@@ -520,11 +520,8 @@ button>a{
       font-size: 20px;
     }
     #trans-right>img{
-      padding-top: 70px;
-      min-width: 320px;
-      max-width: 420px;
-      margin: 0;
-      
+      width: 100%;
+      padding-top: 90px;
     }
   /* transform end */
   #footer{
@@ -535,6 +532,15 @@ button>a{
     line-height: 1;
     padding: 20px;
     color: rgb(160, 152, 152);
+  }
+  #footer>div>p>a:hover{
+    color: orange;
+  }
+  #footer6>p>a{
+    color: orange;
+  }
+  #footer6>p>a:hover{
+    text-decoration: underline;
   }
   #footer1>p:nth-child(1),#footer2>p:nth-child(1),#footer3>p:nth-child(1),#footer5>p:nth-child(1),#footer4>p:nth-child(1),#footer6>p:nth-child(1){
     color: #6c729c;
@@ -566,11 +572,71 @@ img{
   width: auto;
 }
   /* MEDIA QUERY */
-  @media screen and (max-width:600px) {
+  @media screen and (max-width:700px) {
     .dropdown-content>p{
+      grid-template-areas: 'a1 a2';
+    }
+    #box-awarded{
+      grid-template-areas: 'baleft'
+                            ' baright';
+    }
+    #sponsor-img{
+      grid-template-areas: 'apple verizon'
+                            'data  emovis'
+                             'vm ibm '
+                            'loreal nyu';
+    }
+    #content3{
+      grid-template-areas: 'cntleft  '
+                            ' cntright';
+    }
+    #nifty-text{
+      grid-template-areas:'text1 '
+                          'text2'
+                          'text3 ' ;
+    }
+    #review{
+      grid-template-areas: 'img1 img2 ' 
+                            'img3 img4'
+                            'img5 img6';
+    }
+    #switch{
+      grid-template-areas: 'sleft '
+      'sright';
+    }
+    #case-study1{
+      grid-template-areas: 'case1'
+                          'case2'
+                          'case3';
+    }
+    #trans{
+      grid-template-areas: 't1left '
+                          't1right';
       
     }
-      }
+    #trans-right>img{
+      width:90%;
+      margin: 0 5% 2% 5%;
+
+      height: auto;
+    }
+    #animation,#btn-text{
+      display: none;
+    }
+    
+    #footer{
+      grid-template-areas: 'f1 f2 '
+                            'f3 f4'
+                            'f5 f6';
+    }
+    #box-awarded-left-input>button{
+      margin: 10px;
+    }
+    #box-awarded-right>img{
+      width: 100%;
+      height: auto;
+    }
+  }
   @media screen and (max-width:1000px) and (min-width:600px){
     .dropdown-content>p{
       grid-template-areas: 'a1 a2';
@@ -609,8 +675,9 @@ img{
       
     }
     #trans-right>img{
-      width: 80%;
-      margin-left: 10%;
+      width:90%;
+      margin: 0 5% 2% 5%;
+
       height: auto;
     }
     #animation,#btn-text{
@@ -624,6 +691,11 @@ img{
     #box-awarded-left-input>button{
       margin: 10px;
     }
+    #box-awarded-right>img{
+      width: 100%;
+      height: auto;
+    }
+  
       }
   @media screen and (min-width:1000px) {
     .dropdown-content>p{

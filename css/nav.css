@@ -1,3 +1,6 @@
+*{
+  margin-top: 0;
+}
 #nav{
   width: 90%;
  margin-bottom: 70px;
@@ -5,19 +8,22 @@
  background-color: rgb(245, 242, 242);
  border-radius: 10px;
  padding:10px;
+ 
 }
 ul {
 list-style-type: none;
 margin: 0;
 padding: 0;
 overflow: hidden;
-  
+
 }
 ul>li{
 padding: 5px;
+font-size: 17px;
 }
 #nav{
 display: flex;
+flex-direction: row;
 }
 #nav-left{
 flex-grow: 1;
@@ -27,7 +33,7 @@ display: flex;
 font-size: 12px;
 }
 ul>li:nth-child(1)>img{
-width: 60px;
+width: 80px;
 padding-top: 13px;
 }
 li a, .dropbtn {
@@ -90,7 +96,7 @@ padding: 10px;
 border: 1px solid black;
 border-radius: 10px;
 background-color: white;
-font-size: 12px;
+font-size: 18px;
 
 }
 #nav-right>li>button:hover,a:hover{
@@ -99,4 +105,17 @@ color: #02bdad;
 #nav-right>li>button:hover{
 border: 1px solid #02bdad;
 background-color: white;
+}
+
+@media screen and (max-width:1000px) {
+  #nav{
+    flex-direction: column;
+    position: relative;
+  }
+  #nav-left{
+    flex-direction: column;
+  }
+  #nav-right{
+    flex-direction: column-reverse;
+  }
 }
