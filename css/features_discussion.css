@@ -139,21 +139,28 @@
             margin: auto;
             display: grid;
             grid-template-columns:4fr 2.6fr 0.05fr 0.8fr;
-            column-gap: 4%;
-           
+            column-gap: 3%;
+           /* border:1px solid red; */
             
         }
         /* #email-search > *{
             border: 1px solid red;
         } */
-        #email-search > div> input{
-            width: 98%;
+        #email-search > div > input{
+            width: 80%;
             height: 80%;
             font-size: 1.2em;
             padding-left: 4%;
             border-radius: 10px;
             border:1px solid rgb(45, 179, 166);
+            margin-left: 15%;
+            color: rgb(154, 149, 149);
         }
+       
+        
+         input:focus{
+           outline: none;
+         }
         #email-search > button{
           background-color: rgb(45, 179, 166);
           color: white;  
@@ -161,11 +168,30 @@
           font-size: 1.2em;
           height: 80%;
           margin-top: 4px;
-          
+          /* border: 1px solid red; */
+          margin-right: 0%;
+          border-radius: 10px;
+
+        }
+        #email-search>p:nth-of-type(1){
+          padding-top: 80%;
+          /* border: 1px solid red; */
+          font-size: 0.9em;
+          margin-left: 0%;
+          margin-right: 0%;
         }
         #email-search > button:hover{
           background-color: rgb(20, 140, 128);
+          cursor: pointer;
         }
+        
+        #email-search > div >  a > img{
+          border-radius: 10%;
+          border-color: rgb(213, 209, 209);
+          width: 20%;
+          margin-top: 12%;
+        }
+        
         #inf-cc{
             width: 600px;
             margin: auto;
@@ -218,7 +244,7 @@
           margin-top:5px ;
           border:none;
           color:turquoise;
-
+         
       }
 
       #box2 > #anim2{
@@ -263,6 +289,11 @@
         width: 70%;
         font-size: 1.2em;
         box-shadow: 1px 1px #bab6b6;
+}
+
+#box3 > div > button:hover{
+  background-color: teal;
+  cursor: pointer;
 }
 @media screen and (max-width: 800px) {
     #box2{
@@ -386,24 +417,29 @@
   margin-top: 5%;
   color: rgb(67, 64, 64);
   font-size: 1.2em;
-  /* border: 1px solid red; */
+  /* border: 1px solid purple; */
 }
 /* #free-trial > *{
   border: 1px solid red;
 } */
+#free-trial > h3{
+  margin-top: 3%;
+}
 #free-trial > i{
   font-size: 4.5em;
   color: #02bbab;
+  /* border: 1px solid green; */
 }
 #free-trial > button{
   font-size: 1.2em;
-  width: fit-content;
+  width: 30%;
+  padding: 1%;
   height: 50px;
   margin-top: 2%;
   border: none;
   background-color: #02bbab;
   cursor: pointer;
-  
+  /* border: 1px solid red; */
 }
 #free-trial > button:hover{
   background-color: #098c81;
@@ -636,7 +672,7 @@ font-weight: 600;
 }
 /* transfer end */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   #sponsor-img{
       grid-template-areas: 'apple verizon data'
        'emovis vm ibm' 
@@ -657,7 +693,15 @@ font-weight: 600;
   }
   #free-trial > button{
     width: 70%;
-    margin-top: 5%;
+    margin-top: 4%;
+    /* height: fit-content; */
+    border-radius: 4px;
+    box-shadow: rgb(116, 112, 112);
+  }
+  @media screen and (max-width:700px) {
+    #free-trial > button{
+      height:fit-content;
+    }
   }
   #review{
     grid-template-areas: 'img1 img2 img3'
@@ -698,16 +742,23 @@ font-weight: 600;
   font-size: 13px;
   margin-bottom: 50px;
 }
+
 #footer a{
-  color: rgb(79, 75, 75);
+  color: rgb(97, 94, 94);
 }
 #footer6 a{
   color: #dc9e2a;
   text-decoration: none;
 }
 #footer6 a:hover{
-  margin-left:3%;
+  margin-left:1%;
   text-decoration: underline;
+}
+
+#footer1  a:hover,#footer2  a:hover,#footer3  a:hover,#footer4  a:hover,#footer5  a:hover{
+  color: #dc9e2a;
+  cursor: pointer;
+  
 }
 #footer2{
   grid-area: f2;
