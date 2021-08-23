@@ -329,3 +329,36 @@ margin: 0;
   margin-top: -20px;
 }
 /* Save hundred :end */
+@media screen and (max-width:700px){
+  #save-hundred{
+    grid-template-areas: 'hed'
+                         'hed3 '
+                        'hed4';
+  }
+  #hed3{
+    padding-top: 0;
+    padding-left: 150px;
+  }
+  #hed4{
+    padding-left: 70px;
+  }
+}
+@media screen and (max-width:1000px) and (min-width:700px){
+  #save-hundred{
+    grid-template-areas: 'hed'
+                          'hed3 '
+                            'hed4';
+  }
+  #hed3{
+    padding-top: 0;
+    padding-left: 150px;
+  }
+  #hed4{
+    padding-left: 70px;
+  }
+}
+@media screen and (min-width:1000px){
+  #save-hundred{
+    grid-template-areas: 'hed2 hed3 hed4';
+  }
+}

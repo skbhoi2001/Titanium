@@ -17,32 +17,39 @@
         }
         #remote{
             text-align: center;
-            padding-top: 70px;
+            padding-top: 170px;
         }
         #remote>p{
           font-size: 20px;
            
         }
+        .logo{
+          margin-top: 5%;
+        }
+        
         .logo,.name_logo{
             display: flex;
             flex-direction: row;
-            justify-content:space-evenly;
-            margin-top: 5%;
+            justify-content:space-evenly;   
+        }
+        .logo>img{
+          width: 50px;
+          height: 50px;
         }
         .name_logo>h5{
-            margin-top: -15% !important;
+          margin-top: -5%;
+            margin-bottom: 5%;
+            padding-left: 20px ;
         }
-        .img_1st{
-            width: 945px;
-            height: 18px;
-            margin-top: -10%;
-          
+        .img_1st>img{
+            width: 90%;
+            margin-bottom: 0;
         }
         /* transform :start */
     #transform{
       width: 100%;
       margin: auto;
-      margin-top: 65%;
+     
     }
     #trans{
       margin-top: 100px;
@@ -85,10 +92,8 @@
       font-size: 20px;
     }
     #trans-right>img{
-      padding-top: 70px;
-      min-width: 320px;
-      max-width: 420px;
-      margin: 0;
+      
+      width: 100%;
       
     }
   /* transform end */
@@ -126,4 +131,61 @@
     grid-area: f1;
   }
   /* footer end */
+  @media screen and (max-width:700px){
+    #trans{
+      grid-template-areas: 't1left '
+                          't1right';
+      
+    }
+    .img_1st>img{
+      margin-top: 50px;
+    }
+    .logo{
+      margin-top: 80px;
+    }
+    #trans-right>img{
+      width:90%;
+      margin: 0 5% 2% 5%;
+
+      height: auto;
+    }
+    #animation,#btn-text{
+      display: none;
+    }
+    
+    #footer{
+      grid-template-areas: 'f1 f2 '
+                            'f3 f4'
+                            'f5 f6';
+    }
+  }
+  @media screen and (max-width:1000px) and (min-width:700px){
+    #trans{
+      grid-template-areas: 't1left '
+                          't1right';
+      
+    }
+    #trans-right>img{
+      width:90%;
+      margin: 0 5% 2% 5%;
+
+      height: auto;
+    }
+    #animation,#btn-text{
+      display: none;
+    }
+    
+    #footer{
+      grid-template-areas: 'f1 f2 f3 '
+                            'f4 f5 f6';
+    }
+  }
+  @media screen and (min-width:1000px){
+    #trans{
+      grid-template-areas: 't1left t1right';
+    }
+    #footer{
+      grid-template-areas: 'f1 f2 f3 f4 f5 f6';
+    }
+  }
     

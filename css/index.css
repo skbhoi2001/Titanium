@@ -637,7 +637,7 @@ img{
       height: auto;
     }
   }
-  @media screen and (max-width:1000px) and (min-width:600px){
+  @media screen and (max-width:1000px) and (min-width:700px){
     .dropdown-content>p{
       grid-template-areas: 'a1 a2';
     }
