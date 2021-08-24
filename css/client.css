@@ -220,9 +220,10 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            width: 75%;
-            margin-top: 15%;
-            margin-left: 10%;
+            width: 90%;
+            margin: auto;
+            padding-top: 120px;
+            
         }
         /* #left_right{
             
@@ -230,8 +231,8 @@
             width: 80%;
         } */
         #left_right>.stay, #right_left>.automate{
-           width: 25%;
-           margin-top: 5%;
+           width: 55%;
+           margin: auto;
         }
         .stay>p:nth-child(1), #right_left>.automate>p:nth-child(1){
             font-size: 30px;
@@ -244,7 +245,7 @@
         .stay_img>img:nth-child(1){
             width: 70%;
             height: 100%;
-            margin-left: 35%;
+            
             
         }
         .automate_img>img:nth-child(1){
@@ -269,6 +270,7 @@
         .automate_img>img:nth-child(3){
             height: 50%;
             width: 80%;
+            margin: auto;
         }
         /* Nifty Start */
 #nifty{
@@ -574,10 +576,313 @@
     grid-area: f1;
   }
   /* footer end */
-        @media screen and (max-width:900px) and (min-width:600px){
+  /* CONTENT1 START */
+#box-awarded{
+  padding-top: 150px;
+  display: grid; 
+  gap: 20px;
+  
+  
+}
+#box-awarded-left{
+  grid-area: baleft;
+}#box-awarded-right{
+  grid-area: baright;
+}
+#box-awarded-right>img{
+  width: 700px;
+  height: auto;
+}
+#box-awarded-left>p:nth-child(1){
+  background-color: rgb(223 145 0 / 29%);
+  width: 60%;
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 15px;
+  color: #e48546;
+  font-weight: 700;
+}
+#box-awarded-left>p:nth-child(3){
+  font-size: 25px;
+}
+#box-awarded-left>p>button{
+  background-color: #e48546;
+  border: 0;
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 15px;
+  /* margin-right: 5px; */
+}
+#box-awarded-left-input>input{
+  padding: 20px;
+  width: 350px;
+  border-radius: 10px;
+  border: 1px solid rgb(157, 188, 194);
+}
+#box-awarded-left-input>button{
+  padding: 15px;
+  border-radius: 10px;
+ 
+  margin-left: 5px;
+  border: 0;
+  background-color: #02bdad;
+  color: white;
+  font-size: 20px;
+}
+h5{
+  font-weight: 600;
+  text-align: center;
+}
+h5+button{
+  width: 98%;
+  display: inline;
+  margin: 0;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(180, 175, 175);
+}
+h5+button>img{
+  width: 15px;
+  margin-right: 15px;
+}
+#text{
+  font-size: 15px;
+  margin: 0;
+}
+#text>a{
+  border-bottom: 1px dotted black;
+}
+#text>a:hover{
+  border-bottom: 1px solid black;
+  color: black;
+}
+/* CONTENT1 END */
+#clear{
+  clear: both;
+}
+/* SPONSORSHIP START */
+#sponsor{
+  width: 80%;
+  margin: auto;
+}
+#sponsor>p{
+  margin-top: 70px;
+  text-align: center;
+  color: #df9100;
+  font-size: 20px;
+  font-weight: 700;
+}
+#sponsor-img{
+  display: grid;
+  gap: 5px;
+  grid-template-areas: 'apple verizon data emovis vm ibm loreal nyu';
+}
+#apple{
+  grid-area: apple;
+}
+#verizon{
+  grid-area: verizon;
+}
+#data{
+  grid-area: data;
+}
+#emovis{
+  grid-area: emovis;
+}
+#vm{
+  grid-area: vm;
+}
+#ibm{
+  grid-area: ibm;
+}
+#loreal{
+  grid-area: loreal;
+}
+#nyu{
+  grid-area: nyu;
+}
+#sponsor-img>img{
+  width: 100px;
+  display: inline-block;
+  margin-top: 20px;
+}
+#sponsor-img>img:nth-child(1){
+  margin-top: -5px;
+  width: 60px;
+}
+/* SPONSORSHIP END */
+
+        @media screen and (max-width:1000px) and (min-width:600px){
           #right_left,#left_right{
             flex-direction: column ; 
-          }  
+            text-align: center;
+          } 
+          .automate{
+            padding-left: 70px;
+          } 
         }
+       @media screen and (max-width:700px) {
+    .dropdown-content>p{
+      grid-template-areas: 'a1 a2';
+    }
+    #box-awarded{
+      grid-template-areas: 'baleft'
+                            ' baright';
+    }
+    #sponsor-img{
+      grid-template-areas: 'apple verizon'
+                            'data  emovis'
+                             'vm ibm '
+                            'loreal nyu';
+    }
+    #content3{
+      grid-template-areas: 'cntleft  '
+                            ' cntright';
+    }
+    #nifty-text{
+      grid-template-areas:'text1 '
+                          'text2'
+                          'text3 ' ;
+    }
+    #review{
+      grid-template-areas: 'img1 img2 ' 
+                            'img3 img4'
+                            'img5 img6';
+    }
+    #switch{
+      grid-template-areas: 'sleft '
+      'sright';
+    }
+    #case-study1{
+      grid-template-areas: 'case1'
+                          'case2'
+                          'case3';
+    }
+    #trans{
+      grid-template-areas: 't1left '
+                          't1right';
+      
+    }
+    #trans-right>img{
+      width:90%;
+      margin: 0 5% 2% 5%;
+
+      height: auto;
+    }
+    #animation,#btn-text{
+      display: none;
+    }
+    #animation{
+      display: none;
+    }
+    #footer{
+      grid-template-areas: 'f1 f2 '
+                            'f3 f4'
+                            'f5 f6';
+    }
+    #box-awarded-left-input>button{
+      margin: 10px;
+    }
+    #box-awarded-right>img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media screen and (max-width:1000px) and (min-width:700px){
+    .dropdown-content>p{
+      grid-template-areas: 'a1 a2';
+    }
+    #box-awarded{
+      grid-template-areas: 'baleft'
+                            ' baright';
+    }
+    #sponsor-img{
+      grid-template-areas: 'apple verizon data emovis'
+      'vm ibm loreal nyu';
+    }
+    #content3{
+      grid-template-areas: 'cntleft  '
+                            ' cntright';
+    }
+    #nifty-text{
+      grid-template-areas:'text1 text2'
+                          'text3 text4' ;
+    }
+    #review{
+      grid-template-areas: 'img1 img2 img3'
+                            'img4 img5 img6';
+    }
+    #switch{
+      grid-template-areas: 'sleft sright';
+    }
+    #case-study1{
+      grid-template-areas: 'case1'
+                          'case2'
+                          'case3';
+    }
+    #trans{
+      grid-template-areas: 't1left '
+                          't1right';
+      
+    }
+    #trans-right>img{
+      width:90%;
+      margin: 0 5% 2% 5%;
+
+      height: auto;
+    }
+    #animation,#btn-text{
+      display: none;
+    }
+    #animation{
+      display: none;
+    }
+    #footer{
+      grid-template-areas: 'f1 f2 f3 '
+                            'f4 f5 f6';
+    }
+    #box-awarded-left-input>button{
+      margin: 10px;
+    }
+    #box-awarded-right>img{
+      width: 100%;
+      height: auto;
+    }
+  
+      }
+  @media screen and (min-width:1000px) {
+    .dropdown-content>p{
+      grid-template-areas: 'a1 a2';
+    }
+
+    #box-awarded{
+      grid-template-areas: 'baleft baright';
+    }
+
+    #sponsor-img{
+      grid-template-areas: 'apple verizon data emovis vm ibm loreal nyu';
+    }
+    #content3{
+      grid-template-areas: 'cntleft cntright cntright';
+    }
+    #nifty-text{
+      grid-template-areas:'text1 text2 text3' ;
+    }
+    #review{
+      grid-template-areas: 'img1 img2 img3 img4 img5 img6';
+    }
+    #switch{
+      grid-template-areas: 'sleft sright';
+    }
+    #case-study1{
+      grid-template-areas: 'case1 case2 case3';
+    }
+    #trans{
+      grid-template-areas: 't1left t1right';
+    }
+    #footer{
+      grid-template-areas: 'f1 f2 f3 f4 f5 f6';
+    }
+      }   
         
     

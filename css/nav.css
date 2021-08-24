@@ -19,7 +19,7 @@ overflow: hidden;
 }
 ul>li{
 padding: 5px;
-font-size: 17px;
+font-size: 20px;
 }
 #nav{
 display: flex;
@@ -32,9 +32,9 @@ flex-grow: 1;
 display: flex;
 font-size: 12px;
 }
-ul>li:nth-child(1)>img{
-width: 80px;
-padding-top: 13px;
+ul>li:nth-child(1)>a>img{
+width: 100px;
+
 }
 li a, .dropbtn {
 display: inline-block;
